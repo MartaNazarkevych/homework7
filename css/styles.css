@@ -64,7 +64,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1158px;
+    width: 1200px;
     margin-left: 0 auto;
     margin-right: 0 auto;
   }
@@ -217,10 +217,10 @@ img {
   .mobile-menu-container {
     display: flex;
     flex-direction: column;
+    padding-top: 80px;
   }
 
   .mobile-header-list {
-    padding-top: 80px;
     margin: 0;
   }
 
@@ -249,7 +249,6 @@ img {
   }
 
   .mobile-header-list {
-    padding-top: 80px;
     margin: 0;
   }
 
@@ -355,6 +354,13 @@ img {
     font-size: 7vw;
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 428px) {
+   .contact-icon-list > .contact-icon-item.contact-icon-item {
+    margin-right: 30px;
+  }
+}
+
 
 /* TABLET */
 
@@ -637,6 +643,7 @@ img {
   color: var(--text-color);
 }
 
+
 @media screen and (max-width: 1199px) {
   .icon-list.icon-main {
     display: none;
@@ -647,9 +654,14 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .features-container {
+   max-width: 428px;
+   margin: 0 auto;
+  }
   .features-list {
     flex-direction: column;
     align-items: center;
+    width: 396px;
   }
   .features-list > .list-iteam + .list-iteam {
     margin-top: 72px;
@@ -665,7 +677,7 @@ img {
     justify-content: center;
   }
   .list-iteam {
-    width: calc((100% - 72px) / 2);
+    width: calc((100% - 24px) / 2);
   }
   .features-list > .list-iteam:nth-child(-n + 2) {
     margin-bottom: 72px;
@@ -931,7 +943,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 72px;
+  column-gap: 24px;
+  row-gap: 72px;
 }
 
 .section-customer-icon {
@@ -975,11 +988,14 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .section-customer-icon{
+  flex-basis: calc((100% - 16px) / 4);
+}
+}
+
+@media screen and (max-width: 767px) {
   .customer-link {
     width: 190px;
-  }
-  .section-customer-icon {
-    flex-basis: calc((100% - 16px) / 2);
   }
 }
 
@@ -991,8 +1007,8 @@ img {
     gap: 24px;
   }
 
-  .section-customer-list .list-customers:nth-child(-n + 3) {
-    padding-bottom: 40px;
+  .section-customer-list  {
+    row-gap: 40px;
   }
 }
 
@@ -1199,7 +1215,7 @@ img {
     margin-left: 120px;
   }
   .div-footer-subscribe {
-    margin-left: 96px;
+    margin-left: 80px;
   }
   .footer-subscribe-form {
     display: flex;
